@@ -146,8 +146,8 @@ The installation should be on a python version 3 environment. The installation w
 including scikit-learn, pandas, numpy, etc. You may need write permission on the installation environment.
 
 ```
-$ git clone https://github.com/perspectalabs/lupi_svm.git
-$ cd lupi_svm
+$ git clone https://github.com/perspectalabs/LUPI.git
+$ cd LUPI
 $ pip  install .
 ```
 
@@ -233,9 +233,7 @@ cv_score = 'accuracy'
 Get the krr_param_grid and svc_param_grid with mapping methods defined in lupi.App
 ```python
 app = lupi.App(svc_param_grid_dict=svc_param_grid_dict,
-               regr_param_grid_dict=regr_param_grid_dict,
-               cv_kflod=cv_kfold,
-               cv_score=cv_score)
+               regr_param_grid_dict=regr_param_grid_dict)
 
 krr_param_grid = app.get_krr_param_grid()
 svc_param_grid = app.get_svc_param_grid()
